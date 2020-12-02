@@ -5,6 +5,7 @@ const fetchGeoData = require("./utils/fetchGeoData");
 const fetchWeatherData = require("./utils/fetchWeatherData");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //----Define paths for Express confid
 const publicDirectoryPath = path.join(__dirname, "../public");
@@ -81,6 +82,6 @@ app.get("*", (req, res) => {
 });
 
 //listen method on port 3000
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server is up on port 3000.");
 });
