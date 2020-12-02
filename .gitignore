@@ -1,0 +1,4 @@
+node_modules/
+src/app_co*
+public/app_co*
+.env
